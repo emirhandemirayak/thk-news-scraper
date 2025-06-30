@@ -1,0 +1,34 @@
+{
+  "name": "news-scraper",
+  "version": "1.0.0",
+  "description": "News scraper with Firebase Storage integration",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "node test.js",
+    "test-safe": "node test.js",
+    "backup": "node -e \"require('./src/index.js').backupExistingNews()\""
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "cheerio": "^1.0.0-rc.12",
+    "axios": "^1.6.0",
+    "firebase-admin": "^12.0.0",
+    "sharp": "^0.33.0",
+    "dotenv": "^16.3.0",
+    "fs-extra": "^11.2.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "keywords": [
+    "scraper",
+    "firebase",
+    "news",
+    "images"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
